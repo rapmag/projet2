@@ -1,0 +1,337 @@
+
+/*
+*===BODY=== 
+*/
+
+html, body {
+	width: 100%;
+	font-family: 'montserrat', sans-serif;
+	font-size: 87.50%;
+	margin: 0 auto;
+}
+
+.container {
+	box-shadow: 0px 0px 10px #ccc;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+h1, h2 {
+	text-transform: uppercase;
+}
+
+h1 {
+	font-size: 400%;
+	font-family: 'Raleway', sans-serif;
+}
+
+/*
+*===HEADER===
+*/
+
+header {
+	display: flex;
+	flex-direction: row;
+}
+
+figure {
+	text-align: center;
+	margin: 0em;
+	padding: 5em 3em 2em;
+}
+
+.photo {
+	width: 15em;
+	height: auto;
+	border-radius: 100%;
+	border: 3px solid rgb(0,0,0,0.2);
+}
+
+.header_title {
+	padding: 3em 5em 0em;
+}
+
+#name_title {
+	color: #0097A7;
+}
+
+.header_title h2 {
+	text-transform: none;
+	margin-top: -2em;
+}
+
+.header_title hr {
+	display: block;
+	width: 10%;
+	height: 0.2em;
+	border-width: 0px;
+	background-color: #0097A7;
+	margin:-1em auto 0em 0em;
+}
+
+/*
+*===ASIDE===
+*/
+
+aside {
+	display: flex;
+	flex-direction: column;
+	width: 32%;
+	height: auto;
+	color: #303030;
+	background-color: #0097A7;
+	padding: 0em;
+}
+
+aside h2{
+	text-align: center;
+	color: #0097A7;
+	background: #303030;
+	padding: 0.5em 0em;
+}	
+
+aside p {
+	text-align: justify;
+	margin: 2em;
+}
+
+.contact ul {
+	list-style: none;
+	margin-left: 0;
+	padding: 0em 3em;
+}
+
+.contact ul li {
+	margin-bottom: 1em;
+}
+
+.contact ul li a {
+	text-decoration: none;
+	color: #303030;
+}
+
+.loisirs {
+	text-align: center;
+	margin: 5em 0em 0em;
+}
+
+.loisirs i {
+	width: 1.3em;
+	height: 1.3em;
+	line-height: 1.3em;
+	border-radius: 50%;
+	border: 1px solid #303030;
+	margin: 0.5em 0.2em;
+	padding: 0.5em;
+}
+
+/*
+*===SECTION===
+*/
+
+section {
+	display: flex;
+	flex-direction: row;
+}
+
+article {
+	display: flex;
+	flex-direction: column;
+	width: 68%;
+	padding: 0em 5em;
+}
+
+.contenu {
+	padding-top: 1em;
+}
+
+.contenu i {
+	color: #0097A7;
+}
+
+.contenu hr {
+	display: block;
+	width: 100%;
+	height: 0.2em;
+	border-style: solid;
+	border-width: 0em;
+	background: #0097A7;
+	margin: -1em auto 0em 0em;
+}
+
+.element {
+	display: flex;
+	flex-direction: row;
+	line-height: 1.5em;
+	margin-top: 1em;
+}
+
+.date {
+	display: flex;
+	flex-direction: row;
+	width: 25%;
+}
+
+.date i {
+	color: #0097A7;
+	padding-top: 1.5em;
+}
+
+.date p {
+	padding-left: 2em;
+}
+
+.text {
+	display: flex;
+	flex-direction: column;
+	width: 75%;
+	padding-left: 6em;
+}
+
+.text p {
+	line-height: 2em;
+}
+
+.text ul {
+	margin-top: -0.5em;
+}
+
+.reco {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 4em;
+}
+
+.reco p {
+	margin-right: 10em;
+}
+
+/*
+*===MEDIA QUERIES===
+*/
+
+@media only screen and (min-width: 768px) {
+	.container {
+		width: 750px;
+	}
+}
+
+@media only screen and (min-width: 992px) {
+	.container {
+		width: 970px;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.container {
+		width: 1170px;
+	}
+}
+
+@media all and (min-width: 992px) and (max-width: 1200px) {
+	figure {
+		width: 30%;
+		height: auto;
+		margin: 0em;
+		padding: 3em 7em;
+	}
+	.photo {
+		margin-left: -2em;
+	}
+	.text {
+		padding: 0em 4em;
+	}
+	.contenu {
+		width: 50%;
+	}
+	.reco p {
+		margin-right: 2em;
+	}
+}
+
+@media only screen and (max-width: 992px) {
+	header,
+	aside,
+	section {
+		display: flex;
+		flex-direction: column;
+		width: 100% !important;
+		height: auto;
+		justify-content: center;
+		text-align: center;
+	}
+	figure {
+		padding: 2em 0em;
+	}
+	.header_title {
+		align-self: center;
+		padding: 0em;
+		margin: -2em 0em;
+	}
+	.header_title h2 {
+		line-height: 1.5em;
+	}
+	.header_title hr {
+		margin: 0em auto 5em;
+	}
+	aside h2 {
+		margin-top: -1em;
+	}
+	aside p {
+		text-align: center;
+		padding: 0em 4em;
+	}
+	.contact {
+		margin-bottom: 2em;
+	}
+	.contact i {
+		margin: auto;
+	}
+	.footer {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+	.contenu {
+		width: auto;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.contenu h2 {
+		line-height: 1.5em;
+	}
+	.contenu hr {
+		width: 50%;
+		margin: auto;
+	}
+	.element,
+	.date {
+		display: flex;
+		flex-direction: column;
+		width: auto;
+	}
+	.date p {
+		padding: 0em;
+	}
+	.text {
+		width: auto;
+		padding: 0em;
+	}
+	.text ul {
+		list-style-position: inside;
+		margin-left: -3em;
+	}
+	.pen {
+		letter-spacing: -0.1em;
+	}
+	.loisirs {
+		margin-top: 0em;
+	}
+	.reco {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 3em;
+	}
+	.reco p {
+		margin-right: 0em;
+	}
+}
